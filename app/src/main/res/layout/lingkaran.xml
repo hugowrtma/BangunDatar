@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/jari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Jari-jari:"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/luas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/operasi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Luas :"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/hasilLu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/operasi"
+        android:layout_toRightOf="@id/luas"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/keliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/luas"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Keliling :"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/hasilKel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/luas"
+        android:layout_toRightOf="@id/keliling"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/jari1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jari"
+        android:backgroundTint="@color/purple_700"
+        android:hint="jari-jari"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="#473F3F" />
+
+    <Button
+        android:id="@+id/operasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jari1"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0DE315"
+        android:text="Hasil"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
